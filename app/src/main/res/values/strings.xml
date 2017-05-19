@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">AndroidHero</string>
+    <string name="app_name">android 群英传</string>
+    <string name="input_kj_name">请输入控件名称</string>
 </resources>

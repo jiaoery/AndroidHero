@@ -51,11 +51,11 @@ public class SuperTextView extends TextView {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
+//        super.onDraw(canvas);
         //绘制外层矩形
         canvas.drawRect(0,0,getMeasuredWidth(),getMeasuredHeight(),mPaint);
         //绘制内层矩形
-        canvas.drawRect(0,0,getMeasuredWidth()-10,getMeasuredHeight()-10,mPaint1);
+        canvas.drawRect(10,10,getMeasuredWidth()-10,getMeasuredHeight()-10,mPaint1);
         canvas.save();
         //绘制文字前平移10像素
         canvas.translate(10,0);
@@ -65,5 +65,44 @@ public class SuperTextView extends TextView {
 
     }
 
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+       setMeasuredDimension(
+               measureWidth(widthMeasureSpec),
+               measureHeight(heightMeasureSpec)
+       );
+    }
+
+    private int measureWidth(int measureSpec){
+        int result=0;
+        int specMode=MeasureSpec.getMode(measureSpec);
+        int specSize=MeasureSpec.getSize(measureSpec);
+        //若为精确的值
+        if(specMode==MeasureSpec.EXACTLY){
+            result=specSize;
+        }else{
+            result=200;
+            if(specMode==MeasureSpec.AT_MOST){
+                result=Math.min(result,specSize);
+            }
+        }
+        return result;
+    }
+    private int measureHeight(int measureSpec){
+        int result=0;
+        int specMode=MeasureSpec.getMode(measureSpec);
+        int specSize=MeasureSpec.getSize(measureSpec);
+        //若为精确的值
+        if(specMode==MeasureSpec.EXACTLY){
+            result=specSize;
+        }else{
+            result=200;
+            if(specMode==MeasureSpec.AT_MOST){
+                result=Math.min(result,specSize);
+            }
+        }
+        return result;
+    }
 
 }

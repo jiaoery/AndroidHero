@@ -2,5 +2,6 @@
 <resources>
     <array name="main_title">
         <item>TestTextview</item>
+        <item>TestGradientActivity</item>
     </array>
 </resources>

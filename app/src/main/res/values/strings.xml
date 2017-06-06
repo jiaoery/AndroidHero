@@ -2,4 +2,5 @@
     <string name="app_name">android 群英传</string>
     <string name="input_kj_name">请输入控件名称</string>
     <string name="test_string">测试数据</string>
+    <string name="test_news">旧金山市参议员余鼎昂最近提议封杀自主快递机器人。他给出的理由是马路和人行道是为人类而不是机器人建造的。他担心快递机器人可能会替代人类的快递员，导致太多的快递工作消失。提议中的禁令影响到了一家快递机器人创业公司 Marble，该公司使用装备摄像头和超声传感器的机器人在数英里范围内快递小型包裹和食物。快递机器人以步速行走，使用摄像头和传感器避开行人。</string>
 </resources>

@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">AndroidHero</string>
     <string name="input_kj_name">Please Input </string>
-</resources>
+    <string name="test_news">San Francisco City Senator Yu Dingang recently proposed to block the autonomous express robot. He gives the reason that the road and the sidewalk are built for humans rather than robots. He worries that courier robots may replace the human courier, causing too much courier work to disappear. The proposed ban has affected Marble, a courier robot, which uses a camera and a camera with ultrasonic sensors to deliver small packages and food within a few miles. Express the robot to walk at the pace, the use of cameras and sensors to avoid pedestrians.</string>
+
+    </resources>

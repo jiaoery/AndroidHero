@@ -2,5 +2,6 @@
 <resources>
     <array name="clsses_array">
         <item>androidhero.com.androidhero.chapter3.TestTextview</item>
+        <item>androidhero.com.androidhero.chapter3.TestGradientActivity</item>
     </array>
 </resources>
